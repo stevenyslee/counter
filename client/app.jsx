@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
+import { Provider } from'react-redux';
 
+import { store } from './store/store.js';
 import Counter from './components/counter.jsx';
 import Buttons from './components/buttons.jsx';
 
@@ -16,6 +18,7 @@ const StyledButtons = styled(Buttons)`
 
 class App extends React.Component {
   render() {
+    store.getState();
     return (
       <div>
         <StyledCounter />
@@ -24,8 +27,13 @@ class App extends React.Component {
       );
   }
 }
- 
-ReactDOM.render(<App />, document.getElementById('app'));
+
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app'));
 
 // Create buttons
 // Place styled componets in correct places
