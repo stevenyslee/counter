@@ -1,5 +1,5 @@
 {
-  "name": "challenge_2",
+  "name": "React-Webpack4-Starter",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -21,7 +21,10 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.1.1",
+    "styled-components": "^4.1.1"
   }
 }
