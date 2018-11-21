@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import { Provider } from'react-redux';
 
-import { store } from './store/store.js';
+import store from './store/store.js';
 import Counter from './components/counter.jsx';
 import Buttons from './components/buttons.jsx';
 
@@ -18,7 +18,7 @@ const StyledButtons = styled(Buttons)`
 
 class App extends React.Component {
   render() {
-    store.getState();
+    console.log(store);
     return (
       <div>
         <StyledCounter />

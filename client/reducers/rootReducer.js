@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { changeValueReducer } from './changeValueReducer.js';
+import value from './value.js';
 
 export default combineReducers({
-  changeValueReducer
+  value
 });
