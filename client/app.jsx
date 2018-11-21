@@ -5,10 +5,11 @@ import styled from 'styled-components'
 import { Provider } from'react-redux';
 
 import store from './store/store.js';
-import Counter from './components/counter.jsx';
+// import Counter from './components/counter.jsx';
+import UpdateCounter from './containers/counterContainer.js';
 import Buttons from './components/buttons.jsx';
 
-const StyledCounter = styled(Counter)`
+const StyledCounter = styled(UpdateCounter)`
   text-align: center;
 `
 
@@ -18,7 +19,6 @@ const StyledButtons = styled(Buttons)`
 
 class App extends React.Component {
   render() {
-    console.log(store);
     return (
       <div>
         <StyledCounter />
