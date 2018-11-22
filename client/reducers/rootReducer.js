@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import value from './value.js';
+import counterValue from './value.js';
 
 export default combineReducers({
-  value
+  counterValue
 });

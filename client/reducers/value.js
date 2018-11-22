@@ -1,6 +1,6 @@
 import { CHANGE_VALUE } from './../actions/actionTypes.js';
 
-const value = (state = 0, action) => {
+const counterValue = (state = 0, action) => {
   switch (action.type) {
     case CHANGE_VALUE:
       return state + action.payload;
@@ -9,4 +9,4 @@ const value = (state = 0, action) => {
   }
 }
 
-export default value;
+export default counterValue;

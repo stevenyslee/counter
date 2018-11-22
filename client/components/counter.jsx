@@ -10,16 +10,16 @@ const StyledCounter = styled.div`
   font-weight: bold;
 `
 
-const Counter = ({ className, children, value }) => {
+const Counter = ({ className, children, counterValue }) => {
   return (
     <div className={className}>
-      <StyledCounter>{value}</StyledCounter>
+      <StyledCounter>{counterValue}</StyledCounter>
     </div>
     );
 }
 
 Counter.propTypes = {
-  value: PropTypes.number.isRequired
+  counterValue: PropTypes.number.isRequired
 }
 
 export default Counter;

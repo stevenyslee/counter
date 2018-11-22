@@ -4,7 +4,7 @@ import getValue from './../reducers/value.js';
 
 const mapStateToProps = state => {
   return {
-    value: state.value
+    counterValue: state.counterValue
   }
 }
 
