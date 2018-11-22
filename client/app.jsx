@@ -6,10 +6,10 @@ import { Provider } from'react-redux';
 
 import store from './store/store.js';
 // import Counter from './components/counter.jsx';
-import UpdateCounter from './containers/counterContainer.js';
+import CounterContainer from './containers/counterContainer.js';
 import Buttons from './components/buttons.jsx';
 
-const StyledCounter = styled(UpdateCounter)`
+const StyledCounter = styled(CounterContainer)`
   text-align: center;
 `
 
@@ -34,7 +34,3 @@ ReactDOM.render(
     <App />
   </Provider>,
   document.getElementById('app'));
-
-// Create buttons
-// Place styled componets in correct places
-// Attach redux to the project
