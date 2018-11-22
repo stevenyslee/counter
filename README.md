@@ -1,2 +1,2 @@
-# React-Webpack4-Starter
-Starter Repo for React Applications using Webpack 4, Express and Babel 
+# React Redux Count Incrementor
+Simple Counter Incrementor created using React-Redux
