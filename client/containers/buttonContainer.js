@@ -4,17 +4,15 @@ import Button from './../components/button.jsx';
 
 const mapStateToProps = state => ({ });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onButtonClick: value => {
-      dispatch(changeValue(value));
-    }
+const mapDispatchToProps = dispatch => ({
+  onButtonClick: (value) => {
+    dispatch(changeValue(value));
   }
-}
+});
 
-const ChangeValueButton = connect(
+const ButtonContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Button);
 
-export default ChangeValueButton;
+export default ButtonContainer;
