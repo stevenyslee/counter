@@ -4,15 +4,15 @@ import getValue from './../reducers/value.js';
 
 const mapStateToProps = state => {
   return {
-    value: getValue(state.value, state.changeValue)
+    value: state.value
   }
 }
 
 const mapDispatchToProps = dispatch => ({ });
 
-const UpdateCounter = connect(
+const CounterContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
 
-export default UpdateCounter;
+export default CounterContainer;
