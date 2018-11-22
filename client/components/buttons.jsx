@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 // import Button from './button.jsx';
-import ChangeValueButton from './../containers/buttonContainer.js';
+import ButtonContainer from './../containers/buttonContainer.js';
 
 
-const StyledButton = styled(ChangeValueButton)`
+const StyledButton = styled(ButtonContainer)`
   display: inline-block;
 `
 
