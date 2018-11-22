@@ -12,18 +12,19 @@ const StyledButton = styled.button`
   border-radius: 3px;
 `
 
-const Button = ({ className, value }) => {
+const Button = ({ className, value, onButtonClick }) => {
   return (
     <div className={className}>
       <StyledButton onClick={() => {
-        console.log(value);
+        onButtonClick(value);
       }}>{value}</StyledButton>
     </div>
     );
 }
 
 Button.propTypes = {
-  value: PropTypes.number.isRequired
+  value: PropTypes.number.isRequired,
+  onButtonClick: PropTypes.func.isRequired
 }
 
 export default Button;
